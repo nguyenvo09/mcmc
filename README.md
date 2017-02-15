@@ -5,4 +5,8 @@ Some python code to simulate Markov chain Monte Carlo.
 2) q-coloring graph with systematic sweep Gibbs sampling + Fisher Yates shuffle O(q)
 3) Basic MC simulation.
 
-Normalized cut + modularity metrics of graph. 
+
+Implementation of several clustring evaluation metrics:
+
+Normalized cut + modularity for non-groundtruth dataset.
+Adjusted Rand Index (ARI), Rand Index (Rand Index), Normalized Mutual Information (NMI) and Purity
