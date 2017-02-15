@@ -17,6 +17,7 @@ def entropy(nums):
     return ent
 def computeNMI(clusters, classes):
     '''
+    @ref: Page 359, An Introduction to Information Retrieval (by Stanford)
     compute Normalized Mutual Information from
     :param partitions: dictionary of vertex u and its community
     :param groundtruth: true community of vertex u.
