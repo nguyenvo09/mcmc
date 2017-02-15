@@ -67,7 +67,7 @@ def rand_values(cont_table):
     sum1 = (cont_table.multiply(cont_table)).sum()
     sum2 = (np.asarray(cont_table.sum(axis=1)) ** 2).sum()
     sum3 = (np.asarray(cont_table.sum(axis=0)) ** 2).sum()
-    a = (sum1 - n)/2.0;
+    a = (sum1 - n)/2.0
     b = (sum2 - sum1)/2
     c = (sum3 - sum1)/2
     d = (sum1 + n**2 - sum2 - sum3)/2
@@ -336,6 +336,7 @@ def Ncut(partition, graph):
         #we loop though all edges (u,v) such that u=node, and v \in @rest_nodes
         for neighbor, datas in graph[node].items() :
             weight = datas.get("weight", 1.0)
+            cross_edges_weight[com] = cross_edges_weight.get(com, 0.)
             assert neighbor in partition, 'missing community!!!'
             if partition[neighbor] != com:
                 cross_edges_weight[com] = cross_edges_weight.get(com, 0.) + weight
